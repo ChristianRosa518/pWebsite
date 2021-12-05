@@ -233,7 +233,7 @@ p {
 }
 
 .projectsPersonal {
-  background-image: url("../images/PersonalWebsite.PNG");
+  background-image: url("../images/Bgtest2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -338,6 +338,9 @@ p {
     height: 45vh;
     width: 70%;
   }
+  .title {
+    font-size: 24px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -359,7 +362,7 @@ p {
     font-size: 12px;
   }
   .projectsItem {
-    height: 45vh;
+    height: 35vh;
     width: 60%;
   }
 }

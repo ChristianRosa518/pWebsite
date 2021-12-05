@@ -101,6 +101,9 @@ nav ul li {
   nav ul li {
     padding: 0px 24px;
   }
+  .header {
+    height: 12vh;
+  }
 }
 
 @media only screen and (max-width: 600px) {

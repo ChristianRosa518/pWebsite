@@ -1,4 +1,4 @@
-.home::after {
+.firstBlur::after {
   content: "";
   height: 10vh;
   width: 100%;
