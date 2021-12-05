@@ -1,0 +1,224 @@
+@import url("https://use.typekit.net/qft2lfv.css");
+
+.modalBg {
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: scale(0);
+
+  background-image: url("../images/red\ roses.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modalIntro {
+  animation-name: upwords;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.modalOutro {
+  animation-name: downwords;
+  animation-duration: 0.4s;
+}
+
+.modalOverlay {
+  z-index: 1000;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgb(255, 20, 20);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 20, 20, 0.4) 0%,
+    rgba(226, 119, 38, 0.4) 32%,
+    rgba(186, 255, 63, 0.4) 64%,
+    rgba(137, 255, 145, 0.4) 100%
+  );
+}
+
+.modalContent {
+  overflow: hidden;
+  position: absolute;
+  z-index: 10003;
+  background-color: #fefefe;
+  margin-top: 5vh;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 90%;
+  border-radius: 2%;
+
+  transition: 0.3s;
+}
+
+.resume {
+  position: relative;
+  z-index: 10003;
+  max-width: auto;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+.closeButton {
+  position: absolute;
+  z-index: 20000;
+  color: #aaa;
+  float: right;
+  top: 0;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modalFadeBg {
+  transform: scale(0);
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modalWhiteContent {
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80%;
+  width: 30%;
+  background-color: white;
+  border-radius: 5%;
+  transform: scale(0);
+  overflow: hidden;
+}
+
+.fadeInBg {
+  animation-name: fadeInBg;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.fadeOutBg {
+  animation-name: fadeOutBg;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.upwords {
+  animation-name: upwords;
+  animation-duration: 0.3s;
+  animation-delay: 0.15s;
+  animation-fill-mode: forwards;
+}
+
+.downwords {
+  animation-name: downwords;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+/* animations */
+@keyframes upwords {
+  0% {
+    transform: translateY(100%);
+    transform: scale(0);
+  }
+  1% {
+    transform: scale(1);
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+    transform: scale(1);
+  }
+}
+
+@keyframes downwords {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fadeInBg {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes fadeOutBg {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+/* media queries */
+@media only screen and (max-width: 1000px) {
+  .modalContent {
+    width: 70%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .modalWhiteContent {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .modalContent {
+    width: 90%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .modalWhiteContent a,
+  .modalWhiteContent p {
+    font-size: 12px;
+  }
+
+  .modalWhiteContent h2 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .modalWhiteContent a,
+  .modalWhiteContent p {
+    font-size: 12px;
+  }
+
+  .modalWhiteContent h2 {
+    font-size: 14px;
+  }
+}
