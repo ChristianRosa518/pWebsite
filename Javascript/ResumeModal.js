@@ -1,3 +1,10 @@
+//
+//
+//
+//
+
+/* Unused code, I learned a neater way to code this. Keeping it for memories. */
+
 const modal = document.querySelector(".modalBg");
 const button = document.querySelector("#Resume");
 const modalBg = document.querySelector(".modalOverlay");
