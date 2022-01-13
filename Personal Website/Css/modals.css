@@ -1,0 +1,137 @@
+@import url("https://use.typekit.net/qft2lfv.css");
+
+.Image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 25%;
+  object-fit: cover;
+}
+
+.sImage {
+  background-color: #313131;
+}
+
+.modalWhiteContent h2 {
+  font-family: loos-normal, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 16px;
+  padding-left: 8px;
+  font-size: 28px;
+}
+
+.modalWhiteContent p,
+.modalWhiteContent a {
+  text-align: left;
+  padding-top: 8px;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-size: 16px;
+  color: black;
+}
+
+.closeButton {
+  color: black;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 3vw;
+  padding: 10px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.labelColumn {
+  width: 40%;
+}
+
+@keyframes float-up {
+  0% {
+    top: 1000px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.formItem {
+  width: 100%;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+}
+.formItem label {
+  font-size: 18px;
+  font-family: loos-normal, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin-right: 100px;
+}
+
+.formItem input {
+  width: 60%;
+  height: 3vh;
+  margin-bottom: 20px;
+  padding: 6px 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+
+  font-weight: 1000;
+  font-size: 1.7vh;
+  font-family: loos-normal, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.formItem textarea {
+  width: 60%;
+  height: 10vh;
+  margin-bottom: 5px;
+  padding: 12px 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+
+  font-weight: 1000;
+  font-size: 1.7vh;
+  font-family: loos-normal, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+h1 {
+  text-align: center;
+  font-family: loos-normal, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.submit {
+  width: 100%;
+  text-align: center;
+}
+.submit input {
+  font-family: loos-normal, sans-serif;
+  font-weight: 400;
+  margin-top: 15px;
+  font-style: normal;
+
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  padding: 12px 36px;
+  background-color: #cded5c;
+  transition: 0.3s;
+}
+
+.submit input:hover {
+  transform: scale(1.1);
+}
+
+.modalPadding {
+  padding: 16px;
+}
