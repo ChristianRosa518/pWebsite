@@ -1,4 +1,4 @@
-.firstBlur::after {
+.firstBlur::before {
   content: "";
   height: 10vh;
   width: 100%;
@@ -7,8 +7,9 @@
     rgba(255, 255, 255, 1) 70%
   );
   position: absolute;
-  bottom: 0;
+  top: 0;
   z-index: 100;
+  transform: translateY(-10vh);
 }
 
 .section::before {
