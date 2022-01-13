@@ -11,9 +11,11 @@
   transition: 0.3s;
 }
 
-/* .none {
-  transition: 0.3s;
-} */
+@supports (position: fixed) {
+  .header {
+    background-color: red;
+  }
+}
 
 nav {
   height: 100%;
