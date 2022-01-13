@@ -1,9 +1,0 @@
-NEED TO DO:
-media queries
-contact page
-Redo resume animations, seperate animations for bg and content
-Code resume
-Design Project Modals
-
-DONE:
-Project Modals
