@@ -112,8 +112,12 @@ nav ul li {
 @media only screen and (max-width: 450px) {
   nav ul li {
     padding: 0px 4px;
+    margin-bottom: 4px;
   }
   .navItem {
     font-size: 14px;
+  }
+  .logo {
+    padding-top: 5px;
   }
 }

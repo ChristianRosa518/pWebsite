@@ -407,6 +407,8 @@
     font-size: 1.5em;
   }
   .profileDescription p {
-    font-size: 0.9em;
+    font-size: 0.7em;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 }
