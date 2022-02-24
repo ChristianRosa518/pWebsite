@@ -353,6 +353,14 @@
     height: 35vh;
     width: 40%;
   }
+  .profilePicture {
+    width: 40%;
+  }
+  .profileDescription {
+    height: 40%;
+    width: 40%;
+    font-size: 1.2em;
+  }
 }
 @media only screen and (max-width: 700px) {
   .projectsItem {
@@ -362,17 +370,43 @@
   .title {
     font-size: 24px;
   }
+  .profilePicture {
+    width: 40%;
+  }
+  .profileDescription {
+    height: 40%;
+    width: 50%;
+    font-size: 1.2em;
+  }
+  .profileDescription h2 {
+    font-size: 1.7em;
+  }
+  .profileDescription p {
+    font-size: 0.7em;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-  .about {
-    flex-direction: column;
-  }
   .contactSection p {
     font-size: 12px;
   }
   .projectsItem {
     height: 35vh;
     width: 60%;
+  }
+  .profilePicture {
+    height: 50%;
+    width: 55%;
+  }
+  .profileDescription {
+    height: 40%;
+    width: 45%;
+    font-size: 0.8em;
+  }
+  .profileDescription h2 {
+    font-size: 1.5em;
+  }
+  .profileDescription p {
+    font-size: 0.9em;
   }
 }
